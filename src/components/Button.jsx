@@ -5,7 +5,9 @@ const Button = ({ link , assetUrl }) => {
   return (
     <div 
       className={`${styles.btnBlack}`}
-      onClick = {() => window.open(link , "_blank")}
+      onClick = {() => {
+        window.open(link , "_blank")
+      }}
     >
       <img src={assetUrl} alt = "expo_icon" className={styles.btnIcon} />
       <div className='flex flex-col justify-class ml-4'>
